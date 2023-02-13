@@ -270,7 +270,7 @@ open class SocketEngine:
 
         if secure {
             urlPolling.scheme = "https"
-            urlWebSocket.scheme = "wss"
+            urlWebSocket.scheme = "https"
         } else {
             urlPolling.scheme = "http"
             urlWebSocket.scheme = "ws"
@@ -296,6 +296,7 @@ open class SocketEngine:
             urlPolling.percentEncodedQuery = urlPolling.percentEncodedQuery! + engineIOParam
         }
 
+        print("urls: pole:\(urlPolling.url!) web:\(urlWebsocket.url!)")
         return (urlPolling.url!, urlWebSocket.url!)
     }
 
