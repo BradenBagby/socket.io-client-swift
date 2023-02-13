@@ -745,6 +745,7 @@ extension SocketEngine {
     ///   - event: WS Event
     ///   - _:
     public func didReceive(event: WebSocketEvent, client _: WebSocket) {
+        print("BBBBBBBBBBBBBBBBB did receive \(event)")
         switch event {
         case let .connected(headers):
             wsConnected = true
