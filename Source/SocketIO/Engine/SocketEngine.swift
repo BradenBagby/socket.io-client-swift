@@ -296,7 +296,7 @@ open class SocketEngine:
             urlPolling.percentEncodedQuery = urlPolling.percentEncodedQuery! + engineIOParam
         }
 
-        print("urls: pole:\(urlPolling.url!) web:\(urlWebsocket.url!)")
+        print("urls: pole:\(urlPolling.url!) web:\(urlWebSocket.url!)")
         return (urlPolling.url!, urlWebSocket.url!)
     }
 
