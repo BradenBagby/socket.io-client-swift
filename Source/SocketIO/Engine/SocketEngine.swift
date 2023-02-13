@@ -301,6 +301,7 @@ open class SocketEngine:
     }
 
     private func createWebSocketAndConnect() {
+        print("create webs socket with url: \(urlWebSocketWithSid.url!)")
         var req = URLRequest(url: urlWebSocketWithSid)
 
         addHeaders(
